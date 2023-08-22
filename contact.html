@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="contact page">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Anshu Shrestha">
+	<title>Contact</title>
+	<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<script src="script.js"></script>
+</head>
+<body>
+	<style>
+		body {background: linear-gradient(skyblue,rosybrown);}
+	</style>
+	<div class="header">
+	<div class= "container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="edgetech.png" width="110px">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html" class="nav1">Home</a></li>
+					<li><a href="product.html" class="nav1">Product</a></li>
+					<li><a href="blog.html" class="nav1">Blog</a></li>
+					<li><a href="research.html" class="nav1">Research</a></li>
+					<li><a href="contact.html" class="nav1">Contact Us</a></li>
+				</ul>
+			</nav>
+			<img src="scart.png" width="20px" height="20px">
+		</div>
+	</div>
+	</div>
+<!------------------------------------------------contact page------------------------------------------>
+		<div class="contact">
+			<h1 style="margin-bottom: 10px; text-align:center;" id="get">Our doors are always open to you!</h1>
+			<button onclick="change()">Open</button> </br>
+			<p style="text-align:center;">If you have any question or need any general <br>information, please complete this form to request <br> the information you need. </p>
+			<div class="contact-box">
+				<div class="contact-left">
+				<h3 style="text-align: center;">Contact Form</h3>
+				<form name="contactUs" onsubmit="validate()">
+			<div class="input-row">
+				<div class="input-group">
+				<p>
+				First name: <br>
+				 <input type="text" name="First Name"> 
+				</p>
+				</div>
+				<div class="input-group">
+				<p>
+				Last Name: <br>
+				 <input type="text" name="Last Name"> 
+				</p>
+				</div>
+			</div>
+				<div class="input-row">
+				<div class="input-group">
+				<p>
+				Email: <br>
+				 <input type="text" name="email"> 
+				</p>
+			</div>
+				<div class="input-group">
+					<p>
+				Phone Number.: <br>
+				 <input type="text" name="Phone number">
+				</p>
+			</div>
+			</div>
+				<p>
+				Message: <br> <textarea name="message" rows="10" cols="20" placeholder="Enter Message"; style="width: 100%; border: 1px solid #ccc; outline: none; padding: 10px; box-sizing: border-box;" ></textarea>
+				</p>
+				<p><input type="submit" value="Send"></p>
+			</form>
+				</div>
+				<div class="contact-right">
+					<h4>Edge Tech</h4>
+					<table>
+						<tr style="padding-top: 20px;">
+							<td style="padding-top:20px; padding-right: 20px;">Address: </td>
+							<td style="padding-top:20px">mangalchenn,patan,lalitpur</td>
+						</tr>
+						<tr style="padding-top:20px">
+							<td style="padding-top:20px">Email:</td>
+							<td style="padding-top:20px">helloworld@gmail.com</td>
+						</tr>
+						<tr style="padding-top:20px">
+							<td style="padding-top:20px">phone:</td>
+							<td style="padding-top:20px">+977 9845679809</td>
+						</tr>
+						<tr style="padding-top:20px">
+							<td style="padding-top:20px; padding-right:20px"> Opening hours</td>
+							<td style="padding-top:20px"> Monday - Friday <br> 9am- 7pm <br> Weekend <br> Closed</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			</div>
+<!------------------------internal javascript-------------------------------------------->	
+			<script>
+				function validate() {
+					var fname = document.forms["contactUs"] ["First Name"] .value;
+					var lname = document.forms["contactUs"] ["Last Name"] .value;
+					var email = document.forms["contactUs"] ["email"] .value;
+					var phone = document.forms["contactUs"] ["Phone number"] .value;
+
+					if (fname == "" || lname == ""  || email == "" ) {
+						alert ("You cannot leave them blank. Please fill the form");
+					}
+					else {
+						alert ("Thnkyou for your cooperation!")
+					}
+				}
+			</script>
+
+<!---------------------------------------------------------------------------------------------footer section----------------------------------->
+		<div class="footer">
+					<div class="footer section">
+						<div class="row">
+							<div class="col-6">
+								<img src="edgetech.png" width="110px">
+							</div>
+							<div class="col-6">
+								<h3>About us</h3>
+								<p>EdgeTech is an ecommerce website<br>that went live with the objective of making<br>genuine gadgets and accessories<br>available to anyone living<br> in Nepal. We are happy to serve your needs<br> and have large range of products.</p>
+							</div>
+							<div class="col-6">
+								<h3>Our company</h3>
+								<ul>
+									<li>Delivery</li>
+									<li>Terms and conditions of use</li>
+									<li>Secure payment</li>
+									<li>Legal service</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<h3> Our Products</h3>
+								<ul>
+									<li>IPhone Accessories</li>
+									<li>IPad Accesories</li>
+									<li>Covers and Cases</li>
+									<li>Electronics</li>
+									<li>Projector and Accesories</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<h3>Featured Brands</h3>
+								<ul>
+									<li>Apple</li>
+									<li>Samsung</li>
+									<li>Audora</li>
+									<li>JBL</li>
+									<li>Clam</li>
+								</ul>
+							</div>
+						</div>
+						<hr>
+						<div>
+							<div class="image" align="center">
+						<img src="facebook.png" width="50" align="center">
+						<a href="https://twitter.com/">
+						<img src="twitter.png" width="50" align="center">
+						<img src="gmail.png" width="50" align="center">
+						<img src="instagram.png" width="50" align="center">
+					</div>
+						<p class="copyright">Copyright 2022 www.edgetech.com</p>
+					</div>
+					</div>
+				</div>
+</body>
+</html>
